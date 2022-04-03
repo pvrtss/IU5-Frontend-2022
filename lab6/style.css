@@ -1,14 +1,11 @@
 body {
     background-color: black;
-    color: #fff; 
-    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
 }
 
-
-
-
-.task1 {
-    width: 500px;
+.task {
+    width: 40vw;
     padding: 15px 0 15px 0;
     margin-top: 15px;
     display: inline-block;
@@ -19,14 +16,15 @@ body {
     align-items: center;
 }
 
-.color-square {
+#color-square {
     width: 100px;
     height: 100px;
     background-color: aquamarine;
 }
 
 .task-header {
-    width: 500px;
+    margin-top: 15px;
+    width: 40vw;
     font-weight: 700;
     font-size: 30px;
 }
@@ -35,4 +33,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#timer-box {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
 }
