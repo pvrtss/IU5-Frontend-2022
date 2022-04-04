@@ -1,0 +1,164 @@
+body {
+    background-color: black;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.task {
+    width: 800px;
+    padding: 15px 0 15px 0;
+    margin-top: 15px;
+    display: inline-block;
+    background: hsl(225, 6%, 12%);
+    border-radius: 10px;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-square {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.task-header {
+    margin-top: 15px;
+    width: 800px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer-box {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.dropdown {
+	width: 80%;
+}
+
+#dropdown-button {
+	background: #696969;
+    border: 1px solid #696969;
+	width: 100%;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    margin: 0;
+    padding: 18px 46px 18px 46px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    font-size: 20px;
+    font-family: inherit;
+    line-height: 16px;
+
+}
+
+#pacman {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #ffde00;
+	border-left: 15px solid #ffde00;
+	border-bottom: 15px solid #ffde00;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.dropdown-content-hidden {
+	max-height: 0px;
+	transition: .2s;
+	overflow: hidden; 
+}
+
+.dropdown-content-show{
+	margin-top: 12px;
+	background: #696969;
+	padding: 8px;
+    border-radius: 10px;
+	max-height: 400px;
+	transition: .2s;
+	overflow-y: scroll;
+}
+
+.dropdown-item {
+	margin-top: 12px;
+	background: black;
+    border: 1px solid black;
+	border-radius: 16px;
+	padding: 18px 46px 18px 46px;
+}
+
+.dropdown-item:hover{
+	background: #629cb5;
+	border: 1px solid #629cb5;
+}
+.artist {
+	font-weight: bold;
+}
+
+#task-4 {
+	padding: 0px;
+}
+
+#field {
+	background: white;
+	position: relative;
+	background: transparent;
+	width: 800px;
+	height: 800px;
+	padding: 0px;
+}
+
+#episodes {
+	margin-top: 12px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#episodes-button {
+	background: #696969;
+    border: 1px solid #696969;
+	width: 91%;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    margin: 0;
+    padding: 18px 46px 18px 46px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    font-size: 20px;
+    font-family: inherit;
+    line-height: 16px;
+
+}
+
+.episode-card {
+    margin-top: 12px;
+	width: 88%;
+	background: grey;
+	border-radius: 12px;
+	padding: 12px;
+}
+
+.characters {
+	margin-left: 20px;
+}

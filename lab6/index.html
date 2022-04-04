@@ -1,10 +1,58 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
         <title>Lab6</title>
     </head>
-    <body></body>
+    <body>
+        <div class="tasks">
+            <div class="task-header">Задача №1</div>
+            <div class="task">
+                <div id="color-square"></div>
+            </div>
+            <div class="task-header">Задача №2</div>
+            <div class="task">
+                <div id="timer-box">
+                    <div id="timer"><span id="sec">00</span>:<span id="ms">00</span></div>
+                </div>
+            </div>
+            <div class="task-header">Задача №3</div>
+            <div class="task">
+                <div class="dropdown">
+					<button id="dropdown-button">Показать список треков</button>
+					<div class="dropdown-content-hidden" id="dropdown-content">
+						<div class="dropdown-item"><span class="artist">Arctic Monkeys</span> - R U Mine?</div>
+						<div class="dropdown-item"><span class="artist">Полумягкие</span> - Розовое облако</div>
+						<div class="dropdown-item"><span class="artist">The Neighbourhood</span> - Softcore</div>
+						<div class="dropdown-item"><span class="artist">Ежемесячные</span> - Ласточки</div>
+						<div class="dropdown-item"><span class="artist">Tay-K</span> - The Race</div>
+						<div class="dropdown-item"><span class="artist">The Black Keys</span> - Tighten Up</div>
+						<div class="dropdown-item"><span class="artist">Baby Keem</span> - ORANGE SODA</div>
+						<div class="dropdown-item"><span class="artist">Central Cee</span> - Ruby</div>
+						<div class="dropdown-item"><span class="artist">Михаил Круг</span> - Девочка-пай</div>
+					</div>
+                </div>
+            </div>
+			<div class="task-header">Задача №4</div>
+            <div class="task" id="task-4">
+				<div id="field">
+					<div id="pacman"></div>
+				</div>
+			</div>
+			<div class="task-header">Задача №5</div>
+            <div class="task">
+				<button id="episodes-button">Список серий</button>
+				<div id="episodes">
+					
+				</div>
+			</div>
+        </div>
+    </body>
+    <script src="script.js"></script>
 </html>
