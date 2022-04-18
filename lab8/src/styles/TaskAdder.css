@@ -1,0 +1,35 @@
+.add-area {
+    margin-left: 12px;
+    font-family: inherit;
+    background: transparent;
+    resize: none;
+    border: 0;
+    color: white;
+    width: 80%;
+    transition: 0.2s;
+    font-size: 20px;
+    outline: none;
+}
+
+.material-icons.grey {
+    color: rgb(104, 104, 104);
+}
+
+.task-adder {
+        box-sizing: border-box;
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        background: hsl(225, 6%, 12%);
+        border: 1px solid hsl(225, 6%, 12%);
+        border-radius: 10px;
+        padding: 8px;
+        width: 80vw;
+        max-width: 800px;
+
+}
+
+.add-area::placeholder {
+    color: rgb(104, 104, 104);
+}
