@@ -1,6 +1,5 @@
 import React from "react";
 import Task from "./Task";
-import '../styles/Tasks.css'; 
 
 const Tasks = ({ tasks, onEdit, onRemove, onToggle }) => {
     return (
