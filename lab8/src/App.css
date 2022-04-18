@@ -13,3 +13,20 @@ body {
     font-weight: 900;
     font-size: 44px;
 }
+
+.Header {
+  margin-top: 8px;
+  width: 80vw;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#delete-all {
+  background: transparent;
+  border: 2px solid crimson;
+  color: crimson;
+  border-radius: 10px;
+  padding: 8px 20px;
+}

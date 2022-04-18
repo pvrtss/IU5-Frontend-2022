@@ -7,17 +7,9 @@ import TaskAdder from "./task-modules/TaskAdder";
 function App() {
     const [tasks, setTasks] = useState([]);
 
-    function loadTasks() {
-        setTasks(JSON.parse(localStorage.getItem("tasks") || "[]"));
-    }
+    useEffect(() => setTasks(JSON.parse(localStorage.getItem("tasks") || "[]")), []);
 
-    function saveTasks() {
-        localStorage.setItem("tasks", JSON.stringify(tasks));
-    }
-
-    useEffect(() => loadTasks(), []);
-
-    useEffect(() => saveTasks(), [tasks]);
+    useEffect(() => localStorage.setItem("tasks", JSON.stringify(tasks)), [tasks]);
 
     function toggleDone(id) {
         setTasks(
@@ -28,12 +20,10 @@ function App() {
                 return task;
             })
         );
-        saveTasks();
     }
 
     function removeTask(id) {
         setTasks(tasks.filter((task) => task.id !== id));
-        saveTasks();
     }
 
     function editTask(id, text) {
@@ -59,9 +49,15 @@ function App() {
         );
     }
 
+
     return (
         <div className="App">
-            <div className="Logo">Задачи</div>
+            <div className="Header">
+                <div className="Logo">Задачи</div>
+                <button id="delete-all"  onClick={() => setTasks([])}>
+                    <b>Удалить все</b>
+                </button>
+            </div>
             <Tasks tasks={tasks} onRemove={removeTask} onEdit={editTask} onToggle={toggleDone} />
             <TaskAdder onCreate={createTask} />
         </div>
