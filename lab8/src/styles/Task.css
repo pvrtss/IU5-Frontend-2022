@@ -1,0 +1,24 @@
+.task {
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background: hsl(225, 6%, 12%);
+    border: 1px solid hsl(225, 6%, 12%);
+    border-radius: 10px;
+}
+
+.task > textarea {
+    margin: 0 12px;
+    background: transparent;
+    resize: none;
+    border: 0;
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+    overflow: visible;
+}
+
+.task > textarea::placeholder {
+    color: white;
+}
